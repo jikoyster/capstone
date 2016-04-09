@@ -1,0 +1,318 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=PT+Sans);
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+
+/* -----------
+	 GLOBAL
+------------- */
+
+.logo {
+	height: 5.3em;
+	width: 5.3em;
+	float: left;
+	margin-top: -0.2em !important;
+	margin: 0.2em;
+}
+
+html, body {
+  background-color: #b2d7b5;
+  font-family: 'Roboto', sans-serif;
+}
+
+* {
+  border-radius: 0 !important;
+}
+
+/* -----------
+	 FOOTER
+------------- */
+
+.footer {
+	background-color: #ecf0f1;
+	text-align: center;
+	color: #757D75;
+}
+
+.footer h5 {
+	font-weight: bold;
+}
+
+.footer address {
+	font-style: italic;
+	margin-bottom: 0.2em;
+}
+
+/* -----------
+	 NAVBAR
+------------- */
+
+.navstyle {
+	width: 40%;
+	float: right;
+	margin: -4em;
+}
+
+.navstyle ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+.navstyle li {
+	float: left;
+	margin-right: 3em; 
+}
+
+.navstyle a {
+	display: block;
+	width: 7em;
+	font-weight: 700;
+	text-align: center;
+	font-size: 1.3em;
+	border-style: solid;
+	line-height: 2em;
+	color: #95a5a6;
+	font-family: 'Roboto', sans-serif;
+	text-decoration: none;
+}
+
+.navstyle li a:hover {
+	background-color: #ecf0f1;
+	color: #27ae60;
+	border-color:  #ecf0f1;
+}
+
+.navheader > h1 {
+  font-weight: 700;
+  letter-spacing: 0.8em;
+  text-indent: 0.5em;
+  font-family: 'Roboto', sans-serif;
+}
+
+.navheader > h4 {
+  text-indent: 1em;
+  padding-top: -5em;
+  font-style: italic;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* -----------
+	SECTION 1
+------------- */
+
+.sections {
+	height: 22em;
+	background-color: #ecf0f1;
+	text-align: justify;
+  line-height: 1.7;
+}
+
+.sections h3 {
+	font-weight: bold;
+  text-align: center;
+  margin: 1.3em;
+}
+
+.sections button {
+	border-style: solid;
+	margin: 0em -1em 0em -1em;
+}
+
+/* -----------
+  SECTION 2
+------------- */
+
+.subheader h1 {
+  text-transform: uppercase;
+  color: #ecf0f1;
+  text-align: center;
+  background-color: #90C695;
+  font-family: 'PT Sans', sans-serif;
+  letter-spacing: 0.2em;
+  margin: 1em;
+}
+
+.define {
+  text-align: justify;
+  text-indent: 3em;
+  margin-bottom: 5em;
+}
+
+.define p {
+  line-height: 2em;
+  margin: 3em;
+}
+
+.define img {
+  text-align: center;
+}
+
+/* -----------
+    LOGIN
+------------- */
+
+
+.login {
+  background-color: #b2d7b5;
+  background: radial-gradient(lighten(#b2d7b5, 12%), #b2d7b5);
+  height: 100vh;
+  }
+
+.login-modal {
+    display: block;
+    /*margin: 140px auto;*/
+    width: 300px;
+    
+    /*ouhh*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    
+    color: #47704D;
+    
+    background-color: #F2F1EF;
+     
+    &:before {
+      bottom: 100%;
+      left: 1em;
+      content: " ";
+      height: 1em;
+      width: ~"calc(100% - 1em)";
+      position: absolute;
+      pointer-events: none;
+      background-color: #F2F1EF;
+    }
+    &:after {
+      bottom: 100%;
+      left: 1em;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+      border-color: rgba(0,0,0,0);
+      border-bottom-color: #F2F1EF;
+      border-width: 1em;
+      margin-left: -1em;
+    }
+    
+    .btn-login {
+      cursor: pointer;
+      font-weight: 300;
+      font-size: 1.17em;
+      color: #fff;
+      
+      width: 100%;
+      margin: 0;
+      padding: 1em 1em 0 1em;
+      
+      background-color: #90C695;
+      
+      border-style: none;
+      outline: 0 none;
+      
+      &:before {
+        top: 100%;
+        right: 20px;
+        content: " ";
+        height: 20px;
+        width: ~"calc(100% - 20px)";
+        position: absolute;
+        background-color: #90C695;
+      }
+      &:after {
+        top: 100%;
+        right: 20px;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        border-color: rgba(213, 213, 213, 0);
+        border-top-color: #90C695;
+        border-width: 20px;
+        margin-right: -20px;
+      }
+      
+      &:hover, &:focus {
+        background-color: #4c6;
+        
+        &:before {
+          background-color: #4c6;
+        }
+        &:after {
+          border-top-color: #4c6;
+        }
+      }
+      &:active {
+        background-color: #47704D;
+        
+        &:before {
+          background-color: #47704D;
+        }
+        &:after {
+          border-top-color: #47704D;
+        }
+      }
+    }
+  }
+
+  .login fieldset {
+    margin: 1em;
+    font-weight: bold;
+  }
+
+  .login fieldset legend {
+    text-align: center;
+  }
+
+  .login fieldset button {
+    width: 21.5em;
+    margin-top: 2em !important;
+    margin: -1em;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+  }
+
+  /* -----------
+    SIDEBAR
+------------- */
+
+#sidebar-wrapper {
+  background-color: #ecf0f1;
+}
+
+.sidebar-nav a {
+  color: #7f8c8d;
+}
+
+.sidebar-nav li a:hover {
+  background-color: #2ecc71;
+  color: #ecf0f1;
+}
+
+.sidebar-nav li.active a {
+  background-color: #27ae60;
+  color: #ecf0f1;
+}
+
+.userinfo {
+  text-align: center;
+}
+
+.userinfo h4 {
+  color: #2c3e50;
+}
+
+.userinfo h5 {
+  color: #34495e;
+}
